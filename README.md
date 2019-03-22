@@ -64,4 +64,4 @@ RESET_ON_SUCCESS = yes                         #如果一个ip登陆成功后，
 
 更改DenyHosts的默认配置之后，重启DenyHosts服务即可生效: 
 
-/etc/init.d/daemon-control restart             #重启denyhosts
+`/etc/init.d/daemon-control restart`             #重启denyhosts
