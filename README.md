@@ -41,15 +41,27 @@ HOSTS_DENY = /etc/hosts.deny                 #控制用户登陆的文件
 PURGE_DENY = 30m                             #过多久后清除已经禁止的，设置为30分钟；
 
 ‘m’ = minutes
+
 ‘h’ = hours
+
 ‘d’ = days
+
 ‘w’ = weeks
+
 ‘y’ = years
+
 BLOCK_SERVICE = sshd                           #禁止的服务名，当然DenyHost不仅仅用于SSH服务
+
 DENY_THRESHOLD_INVALID = 1                     #允许无效用户失败的次数
+
 DENY_THRESHOLD_VALID = 3                       #允许普通用户登陆失败的次数
+
 DENY_THRESHOLD_ROOT = 3                        #允许root登陆失败的次数
+
 DAEMON_LOG = /var/log/denyhosts                #DenyHosts日志文件存放的路径，默认
+
 RESET_ON_SUCCESS = yes                         #如果一个ip登陆成功后，失败的登陆计数是否重置为0
+
 更改DenyHosts的默认配置之后，重启DenyHosts服务即可生效: 
+
 /etc/init.d/daemon-control restart             #重启denyhosts
