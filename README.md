@@ -4,27 +4,27 @@ DenyHosts（项目主页：http://denyhosts.sourceforge.net/） 是运行于Linu
 ****************************************************************
 `wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz`   #下载安装包
 
-tar zxvf DenyHosts-2.6.tar.gz                                              #解压源码包
+`tar zxvf DenyHosts-2.6.tar.gz`                                              #解压源码包
 
-cd DenyHosts-2.6                                                            #进入安装解压目录
+`cd DenyHosts-2.6`                                                            #进入安装解压目录
 
-python setup.py install                                                    #安装DenyHosts
+`python setup.py install`                                                    #安装DenyHosts
 
-cd /usr/share/denyhosts/                                                  #默认安装路径
+`cd /usr/share/denyhosts/`                                                  #默认安装路径
 
-cp denyhosts.cfg-dist denyhosts.cfg                                    #denyhosts.cfg为配置文件
+`cp denyhosts.cfg-dist denyhosts.cfg`                                    #denyhosts.cfg为配置文件
 
-cp daemon-control-dist daemon-control                                #daemon-control为启动程序
+`cp daemon-control-dist daemon-control`                                #daemon-control为启动程序
 
-chown root daemon-control                                           #添加root权限
+`chown root daemon-control`                                           #添加root权限
 
-chmod 700 daemon-control                                            #修改为可执行文件
+`chmod 700 daemon-control`                                            #修改为可执行文件
 
-ln -s /usr/share/denyhosts/daemon-control /etc/init.d         #对daemon-control进行软连接，方便管理安装到这一步就完成了。
+`ln -s /usr/share/denyhosts/daemon-control /etc/init.d`         #对daemon-control进行软连接，方便管理安装到这一步就完成了。
 
-/etc/init.d/daemon-control start             #启动denyhosts
+`/etc/init.d/daemon-control start`             #启动denyhosts
 
-chkconfig daemon-control on                  #将denghosts设成开机启动
+`chkconfig daemon-control on`                  #将denghosts设成开机启动
 ******************************************************************
 vi /usr/share/denyhosts/denyhosts.cfg    
 
