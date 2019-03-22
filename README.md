@@ -2,7 +2,7 @@
 DenyHosts（项目主页：http://denyhosts.sourceforge.net/） 是运行于Linux上的一款预防SSH暴力破解的软件，可以从http://sourceforge.net/projects/denyhosts/files/ 进行下载，然后将下载回来的DenyHosts-2.6.tar.gz源码包上传到Linux系统中。
 下面是安装过程
 ****************************************************************
-wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz   #下载安装包
+`wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz`   #下载安装包
 
 tar zxvf DenyHosts-2.6.tar.gz                                              #解压源码包
 
