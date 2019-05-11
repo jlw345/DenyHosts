@@ -1,28 +1,31 @@
-#!/bin/bash
-#ÏÂÔØ°²×°°ü
+#!/usr/bin/env bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
+
+#ä¸‹è½½å®‰è£…åŒ…
 wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz
-#½âÑ¹Ô´Âë°ü
+#è§£å‹æºç åŒ…
 tar zxvf DenyHosts-2.6.tar.gz
-#½øÈë°²×°½âÑ¹Ä¿Â¼
+#è¿›å…¥å®‰è£…è§£å‹ç›®å½•
 cd DenyHosts-2.6
-#°²×°DenyHosts
+#å®‰è£…DenyHosts
 python setup.py install
-#ÏÂÔØÅäÖÃÎÄ¼ş
+#ä¸‹è½½é…ç½®æ–‡ä»¶
 wget https://raw.githubusercontent.com/jlw345/DenyHosts/master/denyhosts.cfg
-#ÒÆ¶¯ÅäÖÃÎÄ¼ş
+#ç§»åŠ¨é…ç½®æ–‡ä»¶
 mv denyhosts.cfg /usr/share/denyhosts/denyhosts.cfg
-#Ä¬ÈÏ°²×°Â·¾¶
+#é»˜è®¤å®‰è£…è·¯å¾„
 cd /usr/share/denyhosts/
-#daemon-controlÎªÆô¶¯³ÌĞò
+#daemon-controlä¸ºå¯åŠ¨ç¨‹åº
 cp daemon-control-dist daemon-control
-#Ìí¼ÓrootÈ¨ÏŞ
+#æ·»åŠ rootæƒé™
 chown root daemon-control
-#ĞŞ¸ÄÎª¿ÉÖ´ĞĞÎÄ¼ş
+#ä¿®æ”¹ä¸ºå¯æ‰§è¡Œæ–‡ä»¶
 chmod 700 daemon-control
-#¶Ôdaemon-control½øĞĞÈíÁ¬½Ó£¬·½±ã¹ÜÀí
+#å¯¹daemon-controlè¿›è¡Œè½¯è¿æ¥ï¼Œæ–¹ä¾¿ç®¡ç†
 ln -s /usr/share/denyhosts/daemon-control /etc/init.d
-#Æô¶¯denyhosts
+#å¯åŠ¨denyhosts
 /etc/init.d/daemon-control start
-#½«denghostsÉè³É¿ª»úÆô¶¯
+#å°†denghostsè®¾æˆå¼€æœºå¯åŠ¨
 chkconfig daemon-control on
-echo ¡°done¡±
+echo â€œdoneâ€
