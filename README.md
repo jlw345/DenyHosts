@@ -4,10 +4,11 @@ DenyHosts（项目主页：http://denyhosts.sourceforge.net/） 是运行于Linu
 ****************************************************************
 ①直接运行一键脚本
 
-wget -N --no-check-certificate https://raw.githubusercontent.com/jlw345/DenyHosts/master/denyhosts.sh && chmod +x denyhosts.sh && ./denyhosts.sh
+`wget -N --no-check-certificate https://raw.githubusercontent.com/jlw345/DenyHosts/master/denyhosts.sh && chmod +x denyhosts.sh && ./denyhosts.sh`
 ****************************************************************
 ****************************************************************
 ②以下是手动安装
+
 `wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz`   #下载安装包
 
 `tar zxvf DenyHosts-2.6.tar.gz`                                              #解压源码包
