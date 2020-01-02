@@ -25,5 +25,7 @@ ln -s /usr/share/denyhosts/daemon-control /etc/init.d
 /etc/init.d/daemon-control start
 #将denghosts设成开机启动
 chkconfig daemon-control on
+#查看运行状态
+/etc/init.d/daemon-control status
 echo “done”
 echo "完成"
