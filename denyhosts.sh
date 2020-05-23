@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 #下载安装包
 wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz
 #解压源码包
@@ -27,5 +27,5 @@ ln -s /usr/share/denyhosts/daemon-control /etc/init.d
 chkconfig daemon-control on
 #查看运行状态
 /etc/init.d/daemon-control status
-echo “done”
-echo "完成"
+echo “installation is complete”
+echo "安装完成"
