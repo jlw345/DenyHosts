@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/env bash
 #下载安装包
 wget https://github.com/jlw345/DenyHosts/raw/master/DenyHosts-2.6.tar.gz
 #解压源码包
